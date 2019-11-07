@@ -4,6 +4,7 @@ const box = document.querySelector('.box');
 // puis on lui attache un l'evenement CLICK 
 box.addEventListener('click', function () {
  
+
     let first = 'opening';
     let second = 'open';
 
