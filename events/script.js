@@ -1,9 +1,8 @@
-// on selectionne la class css
+// on cible la class css
 const box = document.querySelector('.box');
 
-// puis on lui attache un l'evenement CLICK 
+// puis on lui attache un l'evenement au CLICK 
 box.addEventListener('click', function () {
- 
 
     let first = 'opening';
     let second = 'open';
@@ -27,7 +26,7 @@ box.addEventListener('click', function () {
     setTimeout(function () {
          
         self.classList.toggle(second);
-        
+
     }, 500);
 
 });
