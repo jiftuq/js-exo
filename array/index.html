@@ -8,27 +8,29 @@
 </head>
 <body>
   <div class="container text-center">
-    <h1>Tableau</h1>
+    <h1>Tableau + while</h1>
     <hr>
     <h2 id="result"></h2>
   </div>
   <script>
-  //________________________________
-
+  //----------------------------------------------
+  // creer des sous tableaux a partir d'un tableau
+  //----------------------------------------------
+  
   function tableau(arr, taille) {
   // ne pas modifier le code ci dessus
   var result = [];
 
   //tant que la taille d'arr n'est pas égale a zero 
   while (arr.length !== 0) {
-    
-    // on vas pusher les data du tableau arr dans result  
+    // on vas envoyer via la methode PUSH les data du tableau ARR dans RESULT  
     result.push(arr.slice(0, taille));
 
     arr = arr.slice(taille);
   }
 
   return result;
+
   }
   //modifiez la phrase à tester (entre "").
   var resultat = tableau(["jean", "jack", "patrick", "sebastien", "johny", "barbie", "ken", "pocahontas", "zlatan"], 3);
