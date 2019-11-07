@@ -17,6 +17,8 @@ box.addEventListener('click', function () {
     }
 
     // on créer la var self pour garder le context de .box
+    // depuis ES6 il y a une autre façon de le faire via un fonction fléché
+    // cette façon nous permet de garder le scope du this, sans creer un var de context
     var self = this;
 
     this.classList.toggle(first);
@@ -25,6 +27,7 @@ box.addEventListener('click', function () {
     setTimeout(function () {
          
         self.classList.toggle(second);
+        
     }, 500);
 
 });
