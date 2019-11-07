@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Tableau</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'/>
+</head>
+<body>
+  <div class="container text-center">
+    <h1>Tableau</h1>
+    <hr>
+    <h2 id="result"></h2>
+  </div>
+  <script>
+  //________________________________
+
+  function tableau(arr, taille) {
+  // ne pas modifier le code ci dessus
+  var result = [];
+
+  //tant que la taille d'arr n'est pas égale a zero 
+  while (arr.length !== 0) {
+    
+    // on vas pusher les data du tableau arr dans result  
+    result.push(arr.slice(0, taille));
+
+    arr = arr.slice(taille);
+  }
+
+  return result;
+  }
+  //modifiez la phrase à tester (entre "").
+  var resultat = tableau(["jean", "jack", "patrick", "sebastien", "johny", "barbie", "ken", "pocahontas", "zlatan"], 3);
+
+  //ne pas modifier le code ci dessous
+  console.log(resultat);
+  $("#result").html(resultat);
+  //________________________________
+</script>
+</body>
+</html>
+
